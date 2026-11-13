@@ -1,0 +1,111 @@
+.wess{
+    width: 8px;
+
+  height: 8px;
+  background-color: aliceblue;
+
+  margin-right: 8px;
+  transition: 2s ease;
+}
+.whoiam{
+   font-size: 60px;
+    font-weight: 600;
+}
+.skills1,.whoiam{margin-left: 40px;}
+.wess {
+  animation: rotateIcon 2s linear infinite ;
+}
+
+.imgdiv {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.skills1{
+  display: flex;
+
+
+  align-items: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+.imgq {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+.aboutdescrip{
+  height: auto;
+  width: 100%;
+  max-width: 620px;
+  object-fit: cover;
+
+}
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.div1s{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0 40px;
+  font-size: 20px;
+}
+
+.aboutdiv1{
+  flex: 1;
+  min-width: 0;
+  height: auto;
+  width: 100%;
+  max-width: 620px;
+  object-fit: cover;
+  font-size: 23px;
+  
+}
+
+
+
+.carrerDotss {
+  width: 8px;
+
+  height: 8px;
+
+  margin-right: 8px;
+  transition: 2s ease;
+}
+.aboutsection{
+  background-color:  rgb(247, 152, 44);
+  position: relative;
+  
+}
+.ds{visibility: hidden;}
+@media  screen  and (max-width:800px) {
+  .div1s{
+    flex-direction: column;
+    gap: 0;
+  }
+  
+}
+@media screen and (max-width: 800px){
+  .div1s,.skills1,.whoiam {
+  margin-left: 7px;
+
+}
+  .div1s {
+    margin-right: 7px;
+  }
+}

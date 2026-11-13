@@ -1,0 +1,289 @@
+.contactsection {
+    padding: 88px 24px;
+    color: aliceblue;
+    background: radial-gradient(ellipse at top left, #172033 0%, #020617 62%);
+}
+.contactinner {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.touch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: aliceblue;
+}
+.touch .passionname {
+    margin: 0;
+}
+.contactheading h1 {
+    margin: 18px 0 10px;
+    color: rgb(247, 152, 44);
+    font-size: clamp(36px, 5vw, 56px);
+}
+.contactheading > p,
+.contactformcard > p,
+.contactinfo > p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+.contactheading > p {
+    margin: 0;
+    font-size: 18px;
+}
+.contactgrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 28px;
+    margin-top: 42px;
+}
+.contactformcard,
+.contactinfo {
+    padding: 32px;
+    border: 1px solid rgba(203, 213, 225, 0.14);
+    border-radius: 18px;
+    background: rgba(15, 23, 42, 0.78);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
+}
+.contactformcard h2,
+.contactinfo h2 {
+    margin: 0;
+    color: aliceblue;
+    font-size: 25px;
+}
+.contactformcard > p,
+.contactinfo > p {
+    margin: 10px 0 24px;
+}
+.contactform {
+    display: grid;
+    gap: 10px;
+}
+.contactform label {
+    margin-top: 6px;
+    color: #e2e8f0;
+    font-weight: 600;
+}
+.contactform input,
+.contactform textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid rgba(203, 213, 225, 0.22);
+    border-radius: 9px;
+    outline: none;
+    background: #0b1220;
+    color: aliceblue;
+    font: inherit;
+}
+.contactform textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+.contactform input:focus,
+.contactform textarea:focus {
+    border-color: rgb(247, 152, 44);
+    box-shadow: 0 0 0 3px rgba(247, 152, 44, 0.16);
+}
+.contactform button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    justify-self: start;
+    margin-top: 12px;
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 9px;
+    background: rgb(247, 152, 44);
+    color: #111827;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.contactform button:hover {
+    transform: translateY(-2px);
+    background: #ffb454;
+}
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+}
+.contactinfoitem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 0;
+    border-top: 1px solid rgba(203, 213, 225, 0.14);
+}
+.contactinfoitem > i {
+    display: grid;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(247, 152, 44, 0.13);
+    color: rgb(247, 152, 44);
+}
+.contactinfoitem h3 {
+    margin: 0 0 5px;
+    color: rgb(247, 152, 44);
+    font-size: 16px;
+}
+.contactinfoitem a,
+.contactinfoitem p {
+    margin: 0;
+    color: #e2e8f0;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+.contactinfoitem a:hover {
+    color: rgb(247, 152, 44);
+}
+.footers{
+    color: aliceblue;
+    background: linear-gradient(135deg, #111827 0%, #020617 100%);
+    border-top: 2px solid rgb(247, 152, 44);
+}
+.footercontent {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 40px;
+}
+.footername {
+    margin: 0 0 12px;
+    color: rgb(247, 152, 44);
+    font-size: 28px;
+}
+.footerdescription {
+    max-width: 320px;
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+.footersocials {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+.footersocials a {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    place-items: center;
+    border: 1px solid rgba(247, 152, 44, 0.55);
+    border-radius: 50%;
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+.footersocials a:hover {
+    color: #020617;
+    background-color: rgb(247, 152, 44);
+}
+.footerlinks,
+.footercontact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.footerlinks h3,
+.footercontact h3 {
+    margin: 0 0 6px;
+    color: rgb(247, 152, 44);
+    font-size: 18px;
+}
+.footerlinks a,
+.footercontact a,
+.footercontact p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.footerlinks a:hover,
+.footercontact a:hover {
+    color: rgb(247, 152, 44);
+}
+.footercontact a,
+.footercontact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-style: normal;
+}
+.footercontact i {
+    color: rgb(247, 152, 44);
+}
+.footerbottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 40px;
+    border-top: 1px solid rgba(203, 213, 225, 0.16);
+    color: #94a3b8;
+    font-size: 14px;
+}
+.footerbottom p {
+    margin: 0;
+}
+.footerbottom span {
+    color: rgb(247, 152, 44);
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 800px){
+.contactsection {
+    padding: 64px 22px;
+}
+.contactgrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.footercontent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+    padding: 40px 24px;
+}
+.footerbrand {
+    grid-column: 1 / -1;
+}
+.footerbottom {
+    padding: 18px 24px;
+}
+}
+
+@media screen and (max-width: 500px) {
+    .contactsection {
+        padding: 48px 16px;
+    }
+    .contactformcard,
+    .contactinfo {
+        padding: 24px 20px;
+    }
+    .contactform button {
+        width: 100%;
+    }
+    .footercontent {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 36px 16px;
+    }
+    .footerbrand {
+        grid-column: auto;
+    }
+    .footerbottom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 16px;
+    }
+}
