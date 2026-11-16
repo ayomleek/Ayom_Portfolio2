@@ -1,8 +1,8 @@
-import "./beyondcode.css";
-import pic1 from "./assets/free.jpg"
-import pic2 from "./assets/psychology.jpg"
-import pic3 from "./assets/stocks.jpg"
-import pic4 from "./assets/personalfinance.jpg"
+import "./BeyondCode.css";
+import pic1 from "../../assets/images/free.jpg";
+import pic2 from "../../assets/images/psychology.jpg";
+import pic3 from "../../assets/images/stocks.jpg";
+import pic4 from "../../assets/images/personalfinance.jpg";
 import { useEffect, useState } from "react";
 function Beyondcodes() {
     const aboutcolor = ['gold', 'yellow', 'white']

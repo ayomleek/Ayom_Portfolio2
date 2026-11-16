@@ -175,6 +175,13 @@ const useCanvasCursor = () => {
   };
 
   useEffect(() => {
+    if (
+      window.matchMedia('(pointer: coarse)').matches ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
+      return;
+    }
+
     renderCanvas();
 
     return () => {

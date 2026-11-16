@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import './project.css';
-import imgs3 from "./assets/billingsoft1.png"
-import imgs2 from "./assets/bikespare2.png"
-import imgs4 from "./assets/billingsoft2.png"
-import imgs5 from "./assets/busfleet1.png"
-import imgs6 from "./assets/busfleet2.png"
+import './Portfolio.css';
+import imgs3 from "../../assets/images/billingsoft1.png";
+import imgs2 from "../../assets/images/bikespare2.png";
+import imgs4 from "../../assets/images/billingsoft2.png";
+import imgs5 from "../../assets/images/busfleet1.png";
+import imgs6 from "../../assets/images/busfleet2.png";
 
 
 function Projects(props) {
@@ -13,8 +13,14 @@ function Projects(props) {
     const [changeimg3, setchangeimg3] = useState(0)
     return (
         <>
-            <h1 className='prossName' id='projectss1'>Projects</h1>
             <section className='prosection'>
+                <header className="projects-heading">
+                    <h4 className="skills11 project-eyebrow">
+                        <span className="carrerDotss wes project-heading-dot" aria-hidden="true"></span>
+                        Digital Expertise
+                    </h4>
+                    <h1 className='prossName' id='projectss1'>Projects</h1>
+                </header>
 
                 <div className='projectbox'>
 

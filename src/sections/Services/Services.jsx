@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./Services.css";
 
-import imgss1 from "./assets/websolution.jpg";
-import imgss2 from "./assets/digitalmarketing.jpg";
-import imgss3 from "./assets/uiux.jpg";
-import imgss4 from "./assets/resume.jpg";
-import imgss5 from "./assets/socialmedia.jpg";
+import imgss1 from "../../assets/images/websolution.jpg";
+import imgss2 from "../../assets/images/digitalmarketing.jpg";
+import imgss3 from "../../assets/images/uiux.jpg";
+import imgss4 from "../../assets/images/resume.jpg";
+import imgss5 from "../../assets/images/socialmedia.jpg";
 
 const servicesData = [
   {
@@ -89,7 +89,7 @@ function Services() {
       <h2 className="services-title">Services I Provide_</h2>
 
       <div className="services-carousel-wrapper">
-        <button className="carousel-arrow left-arrow" onClick={scrollLeft}>
+        <button className="carousel-arrow left-arrow" type="button" aria-label="Scroll services left" onClick={scrollLeft}>
           ←
         </button>
 
@@ -115,7 +115,7 @@ function Services() {
           ))}
         </div>
 
-        <button className="carousel-arrow right-arrow" onClick={scrollRight}>
+        <button className="carousel-arrow right-arrow" type="button" aria-label="Scroll services right" onClick={scrollRight}>
           →
         </button>
       </div>

@@ -1,5 +1,7 @@
-import "./contact.css";
+import "./Contact.css";
 import { useEffect, useState } from "react";
+import Footer from "../../components/Footer/Footer";
+
 function Contacts() {
     const aboutcolor = ['gold', 'yellow', 'white']
     const [colorr, setcolorr] = useState(0);
@@ -22,7 +24,6 @@ function Contacts() {
 
         window.location.href = `mailto:ayomleek@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
-    let cd="</>"
     return (<>
         <section className="contactsection" id="contactss">
             <div className="contactinner">
@@ -87,59 +88,7 @@ function Contacts() {
                 </div>
             </div>
         </section>
-        <footer className="footers">
-            <div className="footercontent">
-                <div className="footerbrand">
-                    <h2 className="footername">Ayom Leek</h2>
-                    <p className="footerdescription">
-                        Junior web developer passionate about creating clean, functional websites.
-                    </p>
-                    <div className="footersocials">
-                        <a href="https://www.linkedin.com/in/ayom-leek/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i className="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/ayomleek" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <i className="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.facebook.com/@ayom.leek.2025" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <i className="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <nav className="footerlinks" aria-label="Quick links">
-                    <h3>Quick Links</h3>
-                    <a href="#exps">Experience</a>
-                    <a href="#projectss1">Portfolio</a>
-                    <a href="#services">Services</a>
-                    <a href="#abouts1">About</a>
-                    <a href="#beyondcode">Beyond the Code</a>
-                    <a href="#contactss">Contact</a>
-                </nav>
-
-                <address className="footercontact">
-                    <h3>Contact Info</h3>
-                    <a href="mailto:ayomleek@gmail.com">
-                        <i className="fa-solid fa-envelope" aria-hidden="true"></i>
-                        ayomleek@gmail.com
-                    </a>
-                    <a href="tel:+254792920744">
-                        <i className="fa-solid fa-phone" aria-hidden="true"></i>
-                        +254792920744
-                    </a>
-                    <p>
-                        <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
-                        Kakuma, Kenya
-                    </p>
-                </address>
-            </div>
-            <div className="footerbottom">
-                <p>&copy; {new Date().getFullYear()} Ayom Leek. All rights reserved.</p>
-                <span>{cd}</span>
-            </div>
-        </footer>
-
-
+        <Footer />
     </>)
 }
 export default Contacts;

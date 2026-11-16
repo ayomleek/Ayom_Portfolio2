@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./skill.css";
+import "./Skills.css";
 
 function Skillss() {
     const colorss = ["gold", "black", "white"]
@@ -13,7 +13,7 @@ function Skillss() {
         return () => clearInterval(vars)
 
     }, [])
-    const doo = "<Skills/>"
+    const doo = "< Skills >"
     const [starts, setstarts] = useState(0);
     function Start(props) {
         setstarts(props)
@@ -39,7 +39,7 @@ function Skillss() {
                         <h3 className={`skis ${(starts === 1) ? "see" : ""}`} onClick={() => Start(1)}> <span className="material-icons  wes">web</span>FrontEnd</h3>
                         <h3 className={`skis ${(starts === 2) ? "see" : ""}`} onClick={() => Start(2)}> <span className="material-icons wes">dns</span>BackEnd </h3>
                         <h3 className={`skis ${(starts === 3) ? "see" : ""}`} onClick={() => Start(3)}><span className="material-icons wes">storage</span> DataBases</h3>
-                        <h3 className={`skis ${(starts === 4) ? "see" : ""}`} onClick={() => Start(4)}><i class="material-icons wes">build</i>Tools </h3>
+                        <h3 className={`skis ${(starts === 4) ? "see" : ""}`} onClick={() => Start(4)}><i className="material-icons wes">build</i>Tools </h3>
                     </div>
                     <hr className="hrline" />
                     <div className="toolssets">

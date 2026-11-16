@@ -1,4 +1,4 @@
-import useCanvasCursor from "./hooks/useCanvasCursor";
+import useCanvasCursor from "../../hooks/useCanvasCursor";
 
 const CanvasCursor = () => {
   useCanvasCursor();

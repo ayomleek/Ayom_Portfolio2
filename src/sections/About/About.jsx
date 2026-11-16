@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import"./about.css";
-import freelancer from "./assets/freelance.png"
+import "./About.css";
+import freelancer from "../../assets/images/freelance.png";
 function Aboutme(){
      const aboutcolor=['gold','yellow','white']
     const[colorr,setcolorr]=useState(0);
