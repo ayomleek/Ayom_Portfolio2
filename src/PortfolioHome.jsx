@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import pdf4 from "./assets/visva_resume.pdf"
+import pdf4 from "./assets/Ayom_Leek_CV.pdf";
 import "./PortfolioHome.css";
 import "./section1.css";
 import img1 from "./assets/IMG_0464.JPG";
