@@ -8,20 +8,24 @@
   transition: 2s ease;
 }
 .whoiam{
-   font-size: 60px;
+   font-size: clamp(36px, 6vw, 60px);
     font-weight: 600;
 }
-.skills1,.whoiam{margin-left: 40px;}
+.skills1,.whoiam{margin-left: 0;}
 .wess {
   animation: rotateIcon 2s linear infinite ;
 }
 
 .imgdiv {
-  flex: 1;
   min-width: 0;
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .skills1{
   display: flex;
@@ -41,6 +45,8 @@
   height: auto;
   object-fit: cover;
   border-radius: 50%;
+  display: block;
+  box-shadow: none;
   
 }
 .aboutdescrip{
@@ -59,22 +65,28 @@
   }
 }
 .div1s{
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(220px, 0.9fr);
+  align-items: stretch;
+  gap: 32px;
   margin: 0 40px;
   font-size: 20px;
 }
 
 .aboutdiv1{
-  flex: 1;
   min-width: 0;
   height: auto;
   width: 100%;
-  max-width: 620px;
+  max-width: 100%;
   object-fit: cover;
-  font-size: 23px;
-  
+  font-size: clamp(14px, 1.4vw, 16px);
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 
 
@@ -90,22 +102,67 @@
 .aboutsection{
   background-color:  rgb(247, 152, 44);
   position: relative;
-  
+  padding: 36px 0 56px;
 }
 .ds{visibility: hidden;}
 @media  screen  and (max-width:800px) {
   .div1s{
-    flex-direction: column;
-    gap: 0;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .imgdiv {
+    justify-content: center;
   }
   
 }
 @media screen and (max-width: 800px){
   .div1s,.skills1,.whoiam {
-  margin-left: 7px;
-
+    margin-left: 0;
 }
   .div1s {
-    margin-right: 7px;
+      margin-right: 0;
   }
 }
+
+  .aboutsection > .skills1,
+  .aboutsection > .whoiam,
+  .div1s {
+    width: min(100% - 48px, 1200px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .aboutdiv1 {
+    font-size: clamp(16px, 1.8vw, 21px);
+  }
+
+  .aboutdescrip1 {
+        width: 100%;
+        flex: 1;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      margin: 0;
+      color: #111827;
+      font-size: inherit;
+      text-align: left;
+        align-items: flex-start;
+        justify-content: flex-start;
+  }
+
+    .aboutdescrip1 p {
+      margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+  @media (max-width: 800px) {
+    .aboutsection > .skills1,
+    .aboutsection > .whoiam,
+    .div1s {
+      width: calc(100% - 32px);
+    }
+  }
