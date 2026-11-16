@@ -27,7 +27,29 @@ function Aboutme(){
                     </h4> <h1 className="whoiam">Who I Am_</h1>
             <div className="div1s">
             <div className="aboutdiv1">
-                    <h5 className="aboutdescrip1">I am a passionate and motivated Junior Web Developer with a solid foundation in visual design and front-end web development. While I am in the early stages of my professional journey, I have built my skills through personal projects, practice and continuous learning. I am eager to grow, take on new challenges and contribute to a team where I can learn while adding value.</h5>
+                    <div className="aboutdescrip1">
+                        <p>
+                            I am a Web Developer and ICT professional passionate about building innovative digital solutions,
+                            exploring emerging technologies, and using technology to solve real-world problems. My expertise
+                            spans front-end development, responsive web design, and software development, complemented by a
+                            strong foundation in digital technologies and visual design.
+                        </p>
+                        <p>
+                            Through my learning journey at Learning Lions, Power Learn Project, and other technology-focused
+                            programmes, I have developed practical skills in HTML, CSS, JavaScript, PHP, WordPress, and
+                            software engineering.
+                        </p>
+                        <p>
+                            Currently serving as an ICT Coach at Learning Lions, I combine technical expertise with a passion
+                            for digital education, mentoring learners and supporting the development of practical ICT skills. I
+                            am driven by continuous learning, creative problem-solving, and building accessible, impactful
+                            technology solutions.
+                        </p>
+                        <p>
+                            My goal is to bridge technology and creativity to build meaningful digital experiences that make a
+                            difference.
+                        </p>
+                    </div>
             </div>
             <div className="imgdiv"><img src={freelancer} className="imgq"/></div>
             </div>
