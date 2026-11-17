@@ -25,7 +25,7 @@
 
 :root[data-theme="light"] body,
 :root[data-theme="light"] .port-body {
-    background: #ffc3d2;
+    background: #ececec;
     color: #1e293b;
 }
 
@@ -36,8 +36,9 @@
 }
 
 :root[data-theme="light"] .menusbar {
-    border: 1px solid rgba(15, 23, 42, 0.12);
-    background: rgba(255, 255, 255, 0.96);
+    border: 0;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.1);
 }
 
 :root[data-theme="light"] .anchor,

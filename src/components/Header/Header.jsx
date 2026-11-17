@@ -43,7 +43,7 @@ function Header() {
           </li>
         </ul>
         <div className="navbar-controls">
-          <ThemeToggle />
+          {menubar === 0 && <ThemeToggle />}
           <button
             className="icon-bar"
             type="button"
