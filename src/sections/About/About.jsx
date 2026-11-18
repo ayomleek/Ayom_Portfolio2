@@ -29,25 +29,16 @@ function Aboutme(){
             <div className="aboutdiv1">
                     <div className="aboutdescrip1">
                         <p>
-                            I am a Web Developer and ICT professional passionate about building innovative digital solutions,
-                            exploring emerging technologies, and using technology to solve real-world problems. My expertise
-                            spans front-end development, responsive web design, and software development, complemented by a
-                            strong foundation in digital technologies and visual design.
+                            I 'm a Web Developer and ICT professional with expertise in front-end development, responsive 
+                            web design and software development, skilled in HTML, CSS, JavaScript, PHP and Python.
                         </p>
                         <p>
-                            Through my learning journey at Learning Lions, Power Learn Project, and other technology-focused
-                            programmes, I have developed practical skills in HTML, CSS, JavaScript, PHP, WordPress, and
-                            software engineering.
+                            Trained through Learning Lions, Power Learn Project and other technology programmes, and currently 
+                            serving as an ICT Coach at Learning Lions, where I mentor learners and build practical digital skills.
                         </p>
                         <p>
-                            Currently serving as an ICT Coach at Learning Lions, I combine technical expertise with a passion
-                            for digital education, mentoring learners and supporting the development of practical ICT skills. I
-                            am driven by continuous learning, creative problem-solving, and building accessible, impactful
-                            technology solutions.
-                        </p>
-                        <p>
-                            My goal is to bridge technology and creativity to build meaningful digital experiences that make a
-                            difference.
+                            Driven by continuous learning and creative problem-solving, I bridge technology and creativity to 
+                            build accessible, impactful digital experiences that solve real-world problems.
                         </p>
                     </div>
             </div>
