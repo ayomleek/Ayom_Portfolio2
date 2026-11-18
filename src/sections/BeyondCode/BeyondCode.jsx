@@ -1,12 +1,19 @@
 import "./BeyondCode.css";
-import pic1 from "../../assets/images/free.jpg";
-import pic2 from "../../assets/images/psychology.jpg";
-import pic3 from "../../assets/images/stocks.jpg";
-import pic4 from "../../assets/images/personalfinance.jpg";
+import coachingImage from "../../assets/images/presenting.jpg";
+import certificateImage from "../../assets/images/IMG_1539.jpg";
+import classroomImage from "../../assets/images/IMG_0464.JPG";
 import { useEffect, useState } from "react";
+
+const carouselImages = [
+    { src: coachingImage, alt: "Presenting digital skills to a group of learners" },
+    { src: certificateImage, alt: "Receiving a certificate of completion" },
+    { src: classroomImage, alt: "Learners practicing digital skills in a computer lab" },
+];
+
 function Beyondcodes() {
     const aboutcolor = ['gold', 'yellow', 'white']
     const [colorr, setcolorr] = useState(0);
+    const [activeImage, setActiveImage] = useState(0);
     useEffect(() => {
         const venom = setInterval(() => {
             setcolorr(prev => (prev + 1) % aboutcolor.length)
@@ -15,50 +22,61 @@ function Beyondcodes() {
         return () => clearInterval(venom);
 
     }, [])
+    useEffect(() => {
+        const rotation = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (rotation.matches) return undefined;
+
+        const carouselTimer = setInterval(() => {
+            setActiveImage(prev => (prev + 1) % carouselImages.length);
+        }, 5000);
+
+        return () => clearInterval(carouselTimer);
+    }, [])
     return (
         <>
             <section className="beyondcodesection" id="beyondcode">
                 <div className="beyondcodediv">
-                    <div className="beyondname">
-                        <div
-                            className="carrerDotss wess"
-                            style={{ backgroundColor: aboutcolor[colorr] }}
-
-
-                        ></div><h4 className="passionname">Finance & Passion</h4>
-                    </div>
-                    <h1 className="beyodsme">FinTech Enthusiast_</h1>
-                    <h4 className="beyondcodedescrip">Finance, for me, goes far beyond numbers and charts — it’s about understanding how money shapes decisions, businesses, and lives. I enjoy exploring topics like personal finance, investment strategies, financial planning, and the psychology behind spending and saving.
-
-                        Just like writing clean and efficient code, managing finances requires discipline, risk assessment, and long-term thinking. Whether it’s optimizing expenses, analyzing market trends, or planning sustainable growth, I enjoy applying structured thinking to financial problems.
-
-                        My interest in finance also complements my work as a developer and freelancer, helping me make smarter business decisions, price my services effectively, and build financially sustainable projects.
-
-                        I actively learn from finance blogs, market insights, and real-world case studies to continuously improve my financial literacy.</h4>
-                    <div className="passioncards">
-                        <div className="divcards1 ve">
-                            <div className="passimgdiv"><img src={pic4} alt="personal finance"  className="imgpass"/></div>
-                            <h2 className="discripname1">Personal Finance_
-
-                            </h2>
-                            <h4 className="discription1">Budgeting, saving strategies, and financial discipline</h4>
+                    <div className="beyond-content-grid">
+                        <div className="beyond-carousel" role="region" aria-label="Digital learning image carousel">
+                            <img
+                                key={activeImage}
+                                className="beyond-carousel-image"
+                                src={carouselImages[activeImage].src}
+                                alt={carouselImages[activeImage].alt}
+                            />
+                            <div className="beyond-carousel-indicators">
+                                {carouselImages.map((image, index) => (
+                                    <button
+                                        key={image.src}
+                                        type="button"
+                                        className={`beyond-carousel-indicator${activeImage === index ? " is-active" : ""}`}
+                                        aria-label={`Show image ${index + 1}`}
+                                        aria-pressed={activeImage === index}
+                                        onClick={() => setActiveImage(index)}
+                                    />
+                                ))}
+                            </div>
                         </div>
-                         <div className="divcards1 ve"><div className="passimgdiv"><img src={pic3} alt="Investing Basics"  className="imgpass"/></div>
-                            <h2 className="discripname1">Investing Basics_
+                        <div className="beyond-copy-card">
+                            <div className="beyondname">
+                                <div
+                                    className="carrerDotss wess"
+                                    style={{ backgroundColor: aboutcolor[colorr] }}
+                                ></div>
+                                <h4 className="passionname">Technology &amp; Passion</h4>
+                            </div>
+                            <h1 className="beyodsme">Information Technology Coach_</h1>
+                            <p className="beyondcodedescrip">ICT coaching, for me, goes beyond teaching software and tools.
+                                It is about equipping people with the digital skills to learn, create, and thrive in a
+                                technology-driven world. Whether I am guiding beginners through their first lines of code
+                                or helping learners build real projects, I focus on hands-on learning that builds
+                                confidence and independence.</p>
 
-                            </h2>
-                            <h4 className="discription1 ">Stocks, mutual funds, long-term wealth building</h4></div>
-                          <div className="divcards1 ve"><div className="passimgdiv"><img src={pic1} alt="Financial Planning"  className="imgpass"/></div>
-                            <h2 className="discripname1">Financial Planning_
-
-                            </h2>
-                            <h4 className="discription1">Pricing, cash flow management, profit planning</h4></div>
-                           <div className="divcards1 ve"><div className="passimgdiv"><img src={pic2} alt="personal finance"  className="imgpass"/></div>
-                            <h2 className="discripname1">Financial Psychology_
-
-                            </h2>
-                            <h4 className="discription1">Money mindset, risk behavior, and decision-making</h4></div>
-
+                            <p className="beyondcodedescrip">My work as an ICT Coach at Learning Lions also complements
+                                my career as a developer, as teaching sharpens my own technical understanding and
+                                communication skills. I continually learn from new technologies, education resources,
+                                and learner feedback to deliver more effective and inclusive digital education.</p>
+                        </div>
                     </div>
                 </div>
             </section>
