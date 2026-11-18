@@ -25,7 +25,7 @@
 
 :root[data-theme="light"] body,
 :root[data-theme="light"] .port-body {
-    background: #ececec;
+    background: #ffffff;
     color: #1e293b;
 }
 
